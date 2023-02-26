@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { Link } from 'react-router-dom';
 import './App.css'
 
 function App() {
@@ -8,7 +7,7 @@ function App() {
     <div className="App">
       <div>
         <h1>Home Page</h1>
-        <button><a href='/about'>Goto About</a></button>
+        <button><Link to='/about'>Goto About</Link></button>
       </div>
     </div>
   )

@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { Link } from 'react-router-dom';
 import './App.css'
 
 function Error() {
@@ -8,7 +7,7 @@ function Error() {
     <div className="App">
       <div>
         <h1 style={{color: 'red'}}>Error Page!!</h1>
-        <button><a href='/'>Goto Home</a></button>
+        <button><Link to='/'>Goto Home</Link></button>
       </div>
     </div>
   )
