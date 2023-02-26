@@ -31,10 +31,16 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/api', routes);
 
 // Routes
-app.use('/', (req, res, next) => {
+app.use('/api', (req, res, next) => {
     res.json({
         "name": "devops-assignment",
         "version": "1.0.0"
+    });
+});
+
+app.use('/*', (req, res, next) => {
+    res.json({
+        message: "Available routes => [/api, /api/orders]"
     });
 });
 
