@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import About from './About'
+import Error from './Error'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
    {
     path: "/about",
     element: <About />
+  },
+  {
+    path: "*",
+    element: <Error />
   }
 ]);
 
